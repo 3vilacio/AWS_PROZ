@@ -1,3 +1,4 @@
+/*reset padrão*/
 *{
   margin: 0;
   padding: 0;
@@ -6,14 +7,109 @@
   font-family: sans-serif;
 }
 
+/*estilzação do header*/
+
+header{
+  height: 5rem;
+  background-color: rgba(153, 152, 152, 0.788);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+#menu a{
+  color: white;
+}
+
+/*estilização da main*/
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+blockquote{
+  margin-bottom: 3rem;
+}
+
+blockquote p{
+  text-align: justify;
+}
+
+main h2{
+  margin-bottom: 3rem;
+}
+
+
+/*estilização dos cards*/
+
+.container, 
+.container2{
+  display: flex;
+  
+}
+
 .card {
   width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #7e7c7c;
   border-radius: 8px;
   margin: 10px;
-  padding: 10px;  
+  padding: 10px; 
+  text-align: justify;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h3{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card p{
+  font-size: 14px;
 }
 .card img {
   width: 100%;
   border-radius: 8px;
+}
+
+.container,
+.container2{
+  margin-bottom: 5rem;
+}
+/*estilização do rodapé*/
+
+.section-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgba(153, 152, 152, 0.788);
+  font-size: 20px;
+  color: rgb(231, 227, 227);
+}
+
+.section-footer ul{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.section-footer a{
+  color: white;
 }
