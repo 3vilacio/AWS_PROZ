@@ -21,17 +21,17 @@ formProduto.addEventListener('submit', function(event) {
     const produto = document.createElement('div');
     produto.classList.add('produto');
 
-    // Adicionando nome do produto
+    // Nome do produto
     const nomeProduto = document.createElement('h2');
     nomeProduto.textContent = nome;
     produto.appendChild(nomeProduto);
 
-    // Adicionando descrição do produto
+    // Descrição do produto
     const descricaoProduto = document.createElement('p');
     descricaoProduto.textContent = descricao;
     produto.appendChild(descricaoProduto);
 
-    // Adicionando preço do produto
+    // Preço do produto
     const precoProduto = document.createElement('p');
     precoProduto.textContent = `Preço: R$ ${preco.toFixed(2)}`;
     produto.appendChild(precoProduto);
@@ -41,4 +41,10 @@ formProduto.addEventListener('submit', function(event) {
 
     // Limpa o formulário após o cadastro
     formProduto.reset();
+
+     // Exibindo informações no console
+     console.log('Produto cadastrado:');
+     console.log('Nome:', nome);
+     console.log('Descrição:', descricao);
+     console.log('Preço:', preco);
 });
